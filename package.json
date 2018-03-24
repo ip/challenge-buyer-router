@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "node test/index.js && standard"
+    "test": "node test/index.js && standard",
+    "start": "NODE_ENV=production node lib",
+    "dev": "NODE_ENV=development nodemon lib"
   },
   "keywords": [],
   "author": "David Guttman <david@guttman.io> (http://davidguttman.com/)",
@@ -11,6 +13,7 @@
   "devDependencies": {
     "fakeredis": "^2.0.0",
     "map-async": "^0.1.1",
+    "nodemon": "^1.17.2",
     "servertest": "^1.2.1",
     "standard": "^8.6.0",
     "tape": "^4.6.3"
