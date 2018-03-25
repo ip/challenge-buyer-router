@@ -4,8 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "node test/index.js && standard",
+    "test:watch": "nodemon --exec \"npm test\"",
     "start": "NODE_ENV=production node lib",
-    "dev": "NODE_ENV=development nodemon lib"
+    "dev": "nodemon lib"
   },
   "keywords": [],
   "author": "David Guttman <david@guttman.io> (http://davidguttman.com/)",
